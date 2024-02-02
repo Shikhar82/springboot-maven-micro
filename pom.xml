@@ -41,7 +41,7 @@
                  <version>2.2.0</version>
                  <inherited>false</inherited>
                 <configuration>
-         		<org>Shikhar82</org>
+         		<org>devsecops</org>
 		</configuration>
     </plugin>
 		</plugins>
