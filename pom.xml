@@ -35,7 +35,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-		</plugins>
        <plugin>
                <groupId>io.snyk</groupId>
                  <artifactId>snyk-maven-plugin</artifactId>
@@ -45,6 +44,7 @@
          		<org>Shikhar82</org>
 		</configuration>
     </plugin>
+		</plugins>
 	</build>
 
 </project>
