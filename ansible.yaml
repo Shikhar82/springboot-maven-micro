@@ -1,0 +1,5 @@
+- hosts: node
+  become: true
+  tasks:
+     - name: Create a new deployment
+       command: kubectl apply -f /home/ubuntu/deployment.yaml
