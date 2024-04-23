@@ -19,7 +19,7 @@ spec:
       - name: ecr-login
       containers:
       - name: asgbuggy1
-        image: 590183770136.dkr.ecr.ap-south-1.amazonaws.com/myapptechstart:9
+        image: 590183770136.dkr.ecr.ap-south-1.amazonaws.com/myapptechstart:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
