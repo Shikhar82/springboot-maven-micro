@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: asgbuggy-deployment3
+  labels:
+    app: asgbuggy1
+  namespace: securityapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: asgbuggy1
+  template:
+    metadata:
+      labels:
+        app: asgbuggy1
+    spec:
+      imagePullSecrets:
+      - name: ecr-login
+      containers:
+      - name: asgbuggy1
+        image: 590183770136.dkr.ecr.ap-south-1.amazonaws.com/myapptechstart:9
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
